@@ -1,0 +1,23 @@
+
+extends layout
+
+block content
+  h1 title
+  p welcome to #{title}
+  p #{contenido}
+  form(method='post' action='/users/form')
+    input(type='text', name='dato')
+    br
+    input(type='radio', name='ciclo'
+    value="1")
+    |Ciclo I
+    br
+    input(type='radio', name='ciclo'
+    value="2")
+    |Ciclo II
+    br
+    input(type='radio', name='ciclo'
+    value="3")
+    |Ciclo III
+    br
+    input(type='submit', value="Enviar")
